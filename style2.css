@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --rouge:var(#EE8888);
+  --rose:var(#EE88CE);
+  --violet:var(#CE88EE);
+  --bleu:var(#888DEE);
+  --ciel:var(#88DEEE);
+  --vert:var(#88EE9E);
+  --jaune:var(#EBEE88);
+  --orange:var(#EEC388);
+  --texte:var(#112969);
+}
+
+body {
+  background-color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+
+/* Typo */
+@font-face {
+  font-family: 'Mulish-Regular';
+  src: url('../Portfolio99/font/Mulish/static/Mulish-Regular.ttf') format('woff');
+}
+
+@font-face {
+  font-family: 'Mulish-Bold';
+  src: url('../Portfolio99/font/Mulish/static/Mulish-Bold.ttf') format('woff');
+}
+
+@font-face {
+  font-family: 'Mulish-Medium';
+  src: url('../Portfolio99/font/Mulish/static/Mulish-Medium.ttf') format('woff');
+  }
+
+/* Curseur */
+* {
+  cursor: none;
+}
+
+.cursor1 {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.cursor1 img {
+  width: 30px;
+  height: 30px;
+}
+
+.cursor2 {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(216, 78, 207);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: transform 0.1s ease-in-out;
+  z-index: 9998;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(128, 128, 128); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #112969; 
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0f2154; 
+} 
+
+/* Navigation */
+.nav-accueil {
+  background-color: #fff; /* Couleur de fond */
+  border-bottom: 1px solid #d1d5db; /* Bordure inférieure */
+  position: fixed; /* Position fixée en haut de la page */
+  top: 0; /* Distance depuis le haut */
+  left: 0; /* Distance depuis la gauche */
+  width: 100%; /* Largeur pleine */
+  z-index: 1000; /* Z-index pour empiler au-dessus d'autres éléments */
+}
+
+.nav-accueil ul {
+  list-style-type: none; /* Supprimer les puces de la liste */
+  margin: 0; /* Supprimer les marges extérieures */
+  padding: 0; /* Supprimer les marges intérieures */
+  display: flex; /* Affichage en ligne des éléments de la liste */
+}
+
+.nav-accueil li {
+  margin-right: 20px; /* Marge à droite entre les éléments */
+}
+
+.nav-accueil a {
+  color: #000; /* Couleur du texte */
+  text-decoration: none; /* Supprimer le soulignement du texte */
+  padding: 10px; /* Remplissage intérieur */
+  transition: color 0.3s ease; /* Transition en douceur pour la couleur du texte */
+}
+
+.nav-accueil a:hover {
+  color: #4b5563; /* Couleur du texte au survol */
+}
