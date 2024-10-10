@@ -3,72 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contenu avec le style choisi</title>
-    <link rel="stylesheet" href="../../../BUT 2/Dev Front/bootstrap4/css/bootstrap.min.css">
+    <title>Portfolio Coloré Dumont Dylan</title>
+    <link rel="stylesheet" href="./bootstrap4/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style2.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="../../../BUT 2/Dev Front/bootstrap4/js/bootstrap.min.js"></script>
+    <script src="./bootstrap4/js/bootstrap.min.js"></script>
 </head>
 <body>
-
-    <div class="cursor1">
-        <img src="../Portfolio Final/Portfolio/img/cercle.png" alt="Custom Cursor">
-    </div>
-    <div class="cursor2"></div>
-    
-
-    <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              <li>
-                <a href="#accueil" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Accueil</a>
-              </li>
-              <li>
-                <a href="#apropos" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">A propos</a>
-              </li>
-              <li>
-                <a href="#competences" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Compétences</a>
-              </li>
-              <li>
-                <a href="#projets" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projets</a>
-              </li>
-              <li>
-                <a href="#container-footer" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      
-
-    
-    <main>
-        <section id="accueil" class="accueil-section">
-            <div class="container-accueil">
-                <div class="accueil-content">
-                    <div class="profil">
-                        <h1>DUMONT Dylan</h1>
-                        <h2>Développeur web</h2>
-                        <div class="accueil-p-img">
-                            <div class="accueil-p">
-                                <p>Passionné par le développement web et les sciences, je suis un développeur front-end sérieux et réfléchi, toujours à la recherche de nouveaux défis pour gagner en compétences.</p>
-                                <p class="accueil-accroche">Voyagez à travers les couleurs et les formes de mon portfolio !</p>
-                            </div>
-                                <div class="accueil-img">
-                                <img src="../Portfolio Final/Portfolio/img/Moi-effet.jpg" alt="Photo Dylan Dumont">
-                            </div>
-                        </div>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#apropos">A propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#container-footer">Contact</a></li>
+                    </ul>
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section id="accueil">
+            <div class="container-accueil">
+                <div class="accueil-texte">
+                    <h1>DUMONT Dylan</h1>
+                    <h2>Développeur web</h2>
+                    <div class="accueil-illustrations">
+                        <img class="dev" src="./img/Coloré/dev.png" alt="Illustration développement web">
+                        <img class="sciences" src="./img/Coloré/fiole.png" alt="Illustration sciences">
+                    </div>
+                    <p>Passionné par le développement web et les sciences, je suis un développeur sérieux et réfléchi, toujours à la recherche de nouveaux défis pour gagner en compétences.</p>
+                    <p class="accueil-accroche">Voyagez à travers les couleurs et les formes de mon portfolio !</p>
+                </div>
+                <div class="accueil-img">
+                    <img src="./img/Coloré/moi.png" alt="Photo Dylan Dumont">
                 </div>
             </div>
         </section>
 
-
-        <!-- <section id="apropos">
+        <section id="apropos">
             <div class="container-apropos">
                 <div class="apropos-image">
-                    <img src="../Portfolio99/img/moi-avatar.svg" alt="Photo Dylan Dumont">
+                    <img src="./img/Coloré/Moi-effet.jpg" alt="Photo Dylan Dumont">
+                    <svg class="losange" width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="100,10 190,100 100,190 10,100" fill="none" stroke="#EE8888" stroke-width="10" />
+                    </svg>
                 </div>
                 <div class="apropos-content">
                     <h3>A propos de moi</h3>
@@ -81,54 +73,45 @@
 
         <section id="competences">
             <h3>Mes compétences</h3>
-            <ul class="liste-competences">
-                <li class="reponse" style="left: 0vw; top: 10vh;">Développement</li>
-                <li class="reponse" style="left: 30vw; top: 10vh;">Graphisme</li>
-                <li class="reponse" style="left: 60vw; top: 10vh;">Audiovisuel</li>
-                <li class="reponse" style="left: 15vw; top: 30vh;">Communication</li>
-                <li class="reponse" style="left: 0vw; top: 70vh;">Programmation</li>
-                <li class="reponse" style="left: 45vw; top: 30vh;">JavaScript</li>
-                <li class="reponse" style="left: 10vw; top: 50vh;">HTML</li>
-                <li class="reponse" style="left: 30vw; top: 50vh;">CSS</li>
-                <li class="reponse" style="left: 50vw; top: 50vh;">PHP</li>
-                <li class="reponse" style="left: 20vw; top: 70vh;">MySQL</li>
-                <li class="reponse" style="left: 40vw; top: 70vh;">Wordpress</li>
-                <li class="reponse" style="left: 60vw; top: 70vh;">GitHub</li>
-            </ul>
+            <div class="container-competences">
+                <div class="reponse ellipse" style="top: 5%; left: 10%; background-color: var(--rouge);"><p>Développement</p></div>
+                <div class="reponse cercle" style="top: 5%; left: 40%; background-color: var(--rose);"><p>Graphisme</p></div>
+                <div class="reponse rectangle" style="top: 5%; left: 70%; background-color: var(--violet);"><p>Audiovisuel</p></div>
+                <div class="reponse rectangle" style="top: 30%; left: 25%; background-color: var(--bleu);"><p>Communication</p></div>
+                <div class="reponse ellipse" style="top: 30%; left: 55%; background-color: var(--ciel);"><p>HTML</p></div>
+                <div class="reponse cercle" style="top: 55%; left: 15%; background-color: var(--vert);"><p>JavaScript</p></div>
+                <div class="reponse rectangle" style="top: 55%; left: 40%; background-color: var(--jaune);"><p>WordPress</p></div>
+                <div class="reponse ellipse" style="top: 55%; left: 65%; background-color: var(--rouge);"><p>GitHub</p></div>
+                <div class="reponse rectangle" style="top: 80%; left: 5%; background-color: var(--orange);"><p>Programmation</p></div>
+                <div class="reponse ellipse" style="top: 80%; left: 32.5%; background-color: var(--violet);"><p>CSS</p></div>
+                <div class="reponse rectangle" style="top: 80%; left: 52.5%; background-color: var(--vert);"><p>PHP</p></div>
+                <div class="reponse cercle" style="top: 80%; left: 75%; background-color: var(--rose);"><p>MySQL</p></div>
+            </div>
         </section>
-        
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                var competences = document.querySelectorAll(".liste-competences .reponse");
-                competences.forEach(function(competence) {
-                    competence.classList.add("appear");
-                });
-            });
-        </script>
-        
-        
-      
-        <section id="projets">
+
+        <section id="projets"> 
             <h3>Projets</h3>
-            <div class="gallery-row">
+            <div class="projets-container">
+                <!-- Bowling -->
                 <div class="gallery">
-                    <a href="#" data-toggle="modal" data-target="#myModal1"> 
-                        <img src="../Portfolio99/img//Minimaliste/bugtracker.png" alt="Image du bugtracker">
+                    <a href="#"> 
+                        <img src="./img/Coloré/bowling.png" alt="Image du Bowling">
                     </a>
                     <div class="desc">
                         <div class="project-details">
-                            <h4>Bugtracker</h4> 
+                            <h4>Bowlistique</h4> 
                             <p class="projets-parcours">Développement web</p>
                         </div>
                         <div class="button-container">
-                            <button class="button" data-toggle="modal" data-target="#myModal1Details">Details</button>
+                            <button class="button button-orange" onclick="window.location.href='content2/bowling.html';">Voir plus</button>
                         </div>
                     </div>
                 </div>
         
+                <!-- Skatepark -->
                 <div class="gallery">
-                    <a href="#" data-toggle="modal" data-target="#myModal2"> 
-                        <img src="../Portfolio99/img/Minimaliste/skatepark.png" alt="Logo Skatepark">
+                    <a href="#"> 
+                        <img src="./img/Coloré/skatepark.png" alt="Logo Skatepark">
                     </a>
                     <div class="desc">
                         <div class="project-details">
@@ -136,44 +119,31 @@
                             <p class="projets-parcours">Graphisme</p>
                         </div>
                         <div class="button-container">
-                            <button class="button" data-toggle="modal" data-target="#myModal2Details">Details</button>
+                            <button class="button button-rouge" onclick="window.location.href='content2/skatepark.html';">Voir plus</button>
                         </div>
                     </div>
                 </div>
         
+                <!-- Startup -->
                 <div class="gallery">
-                    <a href="#" data-toggle="modal" data-target="#myModal3"> 
-                        <img src="../Portfolio99/img/Minimaliste/foodtruck.png" alt="Logo Foodtruck">
+                    <a href="#"> 
+                        <img src="./img/Coloré/startup.png" alt="Logo Startup">
                     </a>
                     <div class="desc">
                         <div class="project-details">
-                            <h4>Foodtruck</h4> 
-                            <p class="projets-parcours">Développement web</p>
+                            <h4>Start-up</h4> 
+                            <p class="projets-parcours">Audiovisuel</p>
                         </div>
                         <div class="button-container">
-                            <button class="button" data-toggle="modal" data-target="#myModal3Details">Details</button>
+                            <button class="button button-jaune" onclick="window.location.href='content2/startup.html';">Voir plus</button>
                         </div>
                     </div>
                 </div>
         
+                <!-- EcoQuest -->
                 <div class="gallery">
-                    <a href="#" data-toggle="modal" data-target="#myModal4"> 
-                        <img src="../Portfolio99/img/Minimaliste/PopArt.png" alt="Affiche MMI">
-                    </a>
-                    <div class="desc">
-                        <div class="project-details">
-                            <h4>Affiche MMI</h4> 
-                            <p class="projets-parcours">Graphisme</p>
-                        </div>
-                        <div class="button-container">
-                            <button class="button" data-toggle="modal" data-target="#myModal4Details">Details</button>
-                        </div>
-                    </div>
-                </div>                
-            
-                <div class="gallery">
-                    <a href="#" data-toggle="modal" data-target="#myModal5"> 
-                        <img src="../Portfolio99/img/Minimaliste/EcoQuest.png" alt="A définir">
+                    <a href="#"> 
+                        <img src="./img/Coloré/ecoquest.png" alt="Logo EcoQuest">
                     </a>
                     <div class="desc">
                         <div class="project-details">
@@ -181,261 +151,157 @@
                             <p class="projets-parcours">Développement web</p>
                         </div>
                         <div class="button-container">
-                            <button class="button" data-toggle="modal" data-target="#myModal5Details">Details</button>
+                            <button class="button button-vert" onclick="window.location.href='content2/ecoquest.html';">Voir plus</button>
                         </div>
                     </div>
                 </div>
-                
+        
+                <!-- Motion -->
                 <div class="gallery">
-                    <a href="#" data-toggle="modal" data-target="#myModal6"> 
-                        <img src="../Portfolio99/img/Minimaliste/encours.png" alt="A définir">
+                    <a href="#"> 
+                        <img src="./img/Coloré/motion.png" alt="Logo Motion">
                     </a>
                     <div class="desc">
                         <div class="project-details">
-                            <h4>Projet en cours</h4> 
-                            <p>Cette zone est en construction, merci de votre compréhension.</p>
+                            <h4>Motion</h4> 
+                            <p class="projets-parcours">Animation</p>
                         </div>
                         <div class="button-container">
-                            <button class="button" data-toggle="modal" data-target="#myModal6Details">Details</button>
+                            <button class="button button-ciel" onclick="window.location.href='content2/motion.html';">Voir plus</button>
                         </div>
                     </div>
                 </div>
-                
+        
+                <!-- Interview -->
                 <div class="gallery">
-                    <a href="#" data-toggle="modal" data-target="#myModal7"> 
-                        <img src="../Portfolio99/img/Minimaliste/encours.png" alt="A définir">
+                    <a href="#"> 
+                        <img src="./img/Coloré/interview.png" alt="Logo Interview">
                     </a>
                     <div class="desc">
                         <div class="project-details">
-                            <h4>Projet en cours</h4> 
-                            <p>Cette zone est en construction, merci de votre compréhension.</p>
+                            <h4>Interview</h4> 
+                            <p class="projets-parcours">Audiovisuel</p>
                         </div>
                         <div class="button-container">
-                            <button class="button" data-toggle="modal" data-target="#myModal7Details">Details</button>
+                            <button class="button button-rose" onclick="window.location.href='content2/interview.html';">Voir plus</button>
                         </div>
                     </div>
                 </div>
-                
+        
+                <!-- Dashboard -->
                 <div class="gallery">
-                    <a href="#" data-toggle="modal" data-target="#myModal8"> 
-                        <img src="../Portfolio99/img/Minimaliste/encours.png" alt="A définir">
+                    <a href="#"> 
+                        <img src="./img/Coloré/dashboard.png" alt="Logo Dashboard">
                     </a>
                     <div class="desc">
                         <div class="project-details">
-                            <h4>Projet en cours</h4> 
-                            <p>Cette zone est en construction, merci de votre compréhension.</p>
+                            <h4>Dashboard</h4> 
+                            <p class="projets-parcours">Développement web</p>
                         </div>
                         <div class="button-container">
-                            <button class="button" data-toggle="modal" data-target="#myModal8Details">Details</button>
+                            <button class="button button-violet" onclick="window.location.href='content2/dashboard.html';">Voir plus</button>
                         </div>
                     </div>
                 </div>
-
+        
+                <!-- Tonneau -->
                 <div class="gallery">
-                    <a href="#" data-toggle="modal" data-target="#myModal9"> 
-                        <img src="../Portfolio99/img/Minimaliste/encours.png" alt="A définir">
+                    <a href="#"> 
+                        <img src="./img/Coloré/tonneau.png" alt="Logo Tonneau">
                     </a>
                     <div class="desc">
                         <div class="project-details">
-                            <h4>Projet en cours</h4> 
-                            <p>Cette zone est en construction, merci de votre compréhension.</p>
+                            <h4>Tonneau</h4> 
+                            <p class="projets-parcours">3D et modélisation</p>
                         </div>
                         <div class="button-container">
-                            <button class="button" data-toggle="modal" data-target="#myModal9Details">Details</button>
+                            <button class="button button-bleu" onclick="window.location.href='content2/tonneau.html';">Voir plus</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Inspecteur -->
+                <div class="gallery">
+                    <a href="#"> 
+                        <img src="./img/Coloré/inspecteur.png" alt="Logo Inspecteur">
+                    </a>
+                    <div class="desc">
+                        <div class="project-details">
+                            <h4>Inspecteur</h4> 
+                            <p class="projets-parcours">Audiovisuel</p>
+                        </div>
+                        <div class="button-container">
+                            <button class="button button-rouge" onclick="window.location.href='content2/inspecteur.html';">Voir plus</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Foodtruck -->
+                <div class="gallery">
+                    <a href="#"> 
+                        <img src="./img/Coloré/foodtruck.png" alt="Logo Foodtruck">
+                    </a>
+                    <div class="desc">
+                        <div class="project-details">
+                            <h4>Foodtruck</h4> 
+                            <p class="projets-parcours">Développement web</p>
+                        </div>
+                        <div class="button-container">
+                            <button class="button button-rose" onclick="window.location.href='content2/foodtruck.html';">Voir plus</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- PopArt -->
+                <div class="gallery">
+                    <a href="#"> 
+                        <img src="./img/Coloré/popart.png" alt="Affiche PopArt">
+                    </a>
+                    <div class="desc">
+                        <div class="project-details">
+                            <h4>PopArt</h4> 
+                            <p class="projets-parcours">Graphisme</p>
+                        </div>
+                        <div class="button-container">
+                            <button class="button button-jaune" onclick="window.location.href='content2/popart.html';">Voir plus</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Crescendo -->
+                <div class="gallery">
+                    <a href="#"> 
+                        <img src="./img/Coloré/crescendo.png" alt="Logo Crescendo">
+                    </a>
+                    <div class="desc">
+                        <div class="project-details">
+                            <h4>Crescendo</h4> 
+                            <p class="projets-parcours">Audiovisuel</p>
+                        </div>
+                        <div class="button-container">
+                            <button class="button button-ciel" onclick="window.location.href='content2/crescendo.html';">Voir plus</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-            
-                
-        <div class="modal fade modal-extra-wide" id="myModal1Details" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="decorative-shapes">
-                        <div class="shape shape1"></div>
-                    </div>
-                    <div class="modal-header">
-                        <h4 class="modal-title">Réalisation d'un bugtracker</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="modal-text">
-                            <p><span class="projets-category">Travail individuel</span></p>
-                            <p><span class="projets-category">Sujet :</span> Dans le cadre d'une situation d'apprentissage évaluée, j'ai confectionné un bugtracker. Ce projet nous permettait de relier nos connaissances sur deux choses : le langage PHP et les bases de données.</p>
-                            <p><span class="projets-category">Langages utilisés :</span>
-                                <ul>
-                                    <li>PHP</li>
-                                    <li>MySql</li>
-                                    <li>HTML / CSS</li>
-                                </ul>
-                            </p>
-                            <p><span class="projets-category">Ce que j'en retiens :</span> Ce projet m'a permis de consolider mes compétences en PHP et en base de données. J'ai surtout découvert comment lier les deux afin de produire du contenu.</p>
-                        </div>
-                        <div class="modal-photos">
-                            <img src="../Portfolio99/img/Minimaliste/bugtracker2.png" alt="Image du bugtracker">
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="button button-details" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="modal fade modal-extra-wide" id="myModal2Details" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="decorative-shapes">
-                        <div class="shape shape1"></div>
-                    </div>
-                    <div class="modal-header">
-                        <h4 class="modal-title">Réalisation de l'identité graphique d'un skatepark fictif</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="modal-text">
-                            <p><span class="projets-category">Travail individuel</span></p>
-                            <p><span class="projets-category">Sujet :</span> Dans le cadre d'une ressource intitulée culture artistique, j'ai élaboré l’identité d’un skate-park dont le nom est Spine Skatepark. Pour cela, il fallait réaliser un logo, une iconographie et une maquette de site "one page".</p>
-                            <p><span class="projets-category">Logiciels utilisés :</span>
-                                <ul>
-                                    <li>Photoshop</li>
-                                    <li>Illustrator</li>
-                                </ul>
-                            </p>
-                            <p><span class="projets-category">Ce que j'en retiens :</span> En définitive, cela m'a permis de consolider mes compétences sur des logiciels et de réfléchir à la cohérence entre chaque livrable. De plus, j'ai appris à réaliser un énoncé de démarche afin de justifier mes choix.</p>
-                        </div>
-                        <div class="modal-photos">
-                            <img src="../Portfolio99/img/Minimaliste/skatepark2.png" alt="Onepage Skatepark">
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="button button-details" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        
-        <div class="modal fade modal-extra-wide" id="myModal3Details" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="decorative-shapes">
-                        <div class="shape shape1"></div>
-                    </div>
-                    <div class="modal-header">
-                        <h4 class="modal-title">Réalisation d'un site de foodtruck fictif</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="modal-text">
-                            <p><span class="projets-category">Travail individuel</span></p>
-                            <p><span class="projets-category">Sujet :</span> Dans le cadre d'une situation d'apprentissage évaluée, j'ai élaboré un site web d'un foodtruck fictif. J'ai décidé de le faire sur le thème de la cuisine japonaise moderne.</p>
-                            <p><span class="projets-category">Langages utilisés :</span>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                </ul>
-                            </p>
-                            <p><span class="projets-category">Ce que j'en retiens :</span> Il s'agit de ma première réalisation de site web complet, fait au début de ma formation. Cela m'a montré l'ampleur d'un projet comme celui-ci, ainsi que des compétences que cela nécessite.</p>
-                        </div>
-                        <div class="modal-photos">
-                            <img src="../Portfolio99/img/Minimaliste/foodtruck2.png" alt="Accueil site foodtruck">
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="button button-details" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        
-        <div class="modal fade modal-extra-wide" id="myModal4Details" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="decorative-shapes">
-                        <div class="shape shape1"></div>
-                    </div>
-                    <div class="modal-header">
-                        <h4 class="modal-title">Réalisation d'une affiche liée au BUT MMI</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="modal-text">
-                            <p><span class="projets-category">Travail individuel</span></p>
-                            <p><span class="projets-category">Sujet :</span> Le but était de faire une affiche qui montre la multiplicité des compétences spécifiques à MMI. Pour cela, j'ai réalisé une affiche qui montre les différentes casquettes qu'ont les étudiants en MMI.</p>
-                            <p><span class="projets-category">Outils utilisés :</span>
-                                <ul>
-                                    <li>Photoshop</li>
-                                    <li>Adobe Color</li>
-                                </ul>
-                            </p>
-                            <p><span class="projets-category">Ce que j'en retiens :</span> J'ai pu augmenter mes capacités en graphisme et cela a développé ma créativité.</p>
-                        </div>
-                        <div class="modal-photos">
-                            <img src="../Portfolio99/img/Minimaliste/PopArt2.png" alt="Affiche MMI">
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="button button-details" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="modal fade modal-extra-wide" id="myModal5Details" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="decorative-shapes">
-                        <div class="shape shape1"></div>
-                    </div>
-                    <div class="modal-header">
-                        <h4 class="modal-title">Réalisation d'un site web</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="modal-text">
-                            <p><span class="projets-category">Travail en groupe</span></p>
-                            <p><span class="projets-category">Sujet :</span> Dans le cadre d'une situation d'apprentissage évaluée, nous avons élaboré un site web qui vise à sensibiliser les gens à propos de leur impact surl'environnement. Lors de ce projet, je me suis occupé du développement back avec la gestion de la base de données et du bon fonctionnement des fonctionnalités proposées.</p>
-                            <p><span class="projets-category">Langages utilisés :</span>
-                                <ul>
-                                    <li>PHP</li>
-                                    <li>MySql</li>
-                                    <li>HTML / CSS</li>
-                                </ul>
-                            </p>
-                            <p><span class="projets-category">Ce que j'en retiens :</span> Ce projet m'a permis de consolider mes compétences en PHP et en base de données. J'ai surtout découvert comment lier les deux afin de produire du contenu.</p>
-                        </div>
-                        <div class="modal-photos">
-                            <img src="../Portfolio99/img/Minimaliste/EcoQuest2.png" alt="Image du bugtracker">
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="button button-details" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
-           
+    
 
     <footer>
         <div id="container-footer">
             <div class="footer-section">
-                <h4>Sections précédentes</h4>
+                <h4>Les thèmes</h4>
                 <ul>
-                    <li><a href="#accueil">Accueil</a></li><br/>
-                    <li><a href="#apropos">A propos</a></li><br/>
-                    <li><a href="#competences">Compétences</a></li><br/>
-                    <li><a href="#projets">Projets</a></li><br/>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="./content2.html">Portfolio coloré</a></li><br/>
+                    <li><a href="./content1.html">Portfolio minimaliste</a></li><br/>
+                    <li><a href="./content3.html">Portfolio personnel</a></li><br/>
                 </ul>
             </div>
             <div class="footer-section">
                 <h4>Contacts</h4>
-                <p>Adresse: 20 rue pavée, 76500 Elbeuf</p>
                 <p>Email: dumont27.pro@gmail.com</p>
-                <p>Téléphone: 06 26 36 73 48</p>
-                <p><a href="../Portfolio99/img/Minimaliste/CV.pdf" download>Télécharger mon CV</a></p>
+                <p><a href="./img/Coloré/CV-Coloré-Dumont-Dylan.pdf" download>Télécharger mon CV</a></p>
             </div>
             <div class="footer-section">
                 <h4>Réseaux sociaux</h4>
@@ -447,34 +313,6 @@
         <div class="credits">
             <p>&copy; 2024 - Portfolio Dumont Dylan. Tous droits réservés.</p>
         </div>
-    </footer> -->
-
-    <script>
-        var selectedStyle = localStorage.getItem('selectedStyle');
-        if (selectedStyle) {
-            document.getElementById('style').setAttribute('href', selectedStyle);
-        }
-    </script>
-
-    <script>
-        // Curseur 1
-        document.addEventListener('mousemove', (e) => {
-            let cursor = document.querySelector('.cursor1');
-            cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-        });
-
-        // Curseur 2
-        document.addEventListener('DOMContentLoaded', function () {
-        let cursor = document.querySelector('.cursor2');
-        document.addEventListener('mousemove', function (e) {
-            cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-        });
-        document.addEventListener('scroll', function (e) { // Ajoutez 'e' comme argument ici
-            let scrollY = window.scrollY;
-            cursor.style.transform = `translate(${e.clientX}px, ${e.clientY + scrollY}px)`;
-        });
-        document.body.style.cursor = 'none';
-        });
-    </script>
+    </footer>
 </body>
 </html>

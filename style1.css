@@ -28,17 +28,17 @@ html, body {
 /* Typo */
 @font-face {
     font-family: 'Bitter-Regular';
-    src: url('../Portfolio99/font/Bitter/static/Bitter-Regular.ttf') format('woff');
+    src: url('./font/Bitter/static/Bitter-Regular.ttf') format('woff');
 }
 
 @font-face {
     font-family: 'Bitter-Bold';
-    src: url('../Portfolio99/font/Bitter/static/Bitter-Bold.ttf') format('woff');
+    src: url('./font/Bitter/static/Bitter-Bold.ttf') format('woff');
 }
 
 @font-face {
     font-family: 'Bitter-Medium';
-    src: url('../Portfolio99/font/Bitter/static/Bitter-Medium.ttf') format('woff');
+    src: url('./font/Bitter/static/Bitter-Medium.ttf') format('woff');
     }
 
 /* Curseur */
@@ -224,7 +224,7 @@ h3 {
     font-size: 22px;
     color: #333;
     font-family: 'Bitter-Regular';
-    text-align: left;
+    text-align: justify;
     width: 40%;
     flex: 1;
 }
@@ -239,7 +239,6 @@ h3 {
 .accueil-img {
     flex-shrink: 0;
     flex: 1;
-    text-align: right;
 }
 
 .accueil-img img {
@@ -265,7 +264,7 @@ h3 {
 }
 
 .apropos-image {
-    text-align: center;
+    text-align: justify;
     width: 40vw;
     height: auto;
 }
@@ -377,7 +376,7 @@ h3 {
 #projets p {
     margin: 10px 0;
     font-size: 16px;
-    /* text-align: center; */
+    text-align: justify;
 }
 
 .button {
@@ -406,7 +405,7 @@ h3 {
     background-color: #999;
     padding: 10px 10px;
     border-radius: 5px;
-    text-align: left; 
+    text-align: justify; 
     width: 80%;
 }
 
@@ -436,6 +435,7 @@ h3 {
     border-radius: 15px;
     display: flex;
     overflow: hidden;
+    text-align: justify;
 }
 
 .projets-category {
@@ -466,7 +466,7 @@ h3 {
 }
 
 .modal-text ul {
-    list-style-image: url('../Portfolio99/img/Minimaliste/ul.png');
+    list-style-image: url('./img/Minimaliste/ul.png');
     padding-left: 30px;
 }
 
@@ -496,6 +496,10 @@ h3 {
 .modal-extra-wide .modal-dialog {
     max-width: 1500px; 
     width: 100%;
+}
+
+.modal a {
+    color: rgb(164, 82, 40);
 }
 
 
@@ -688,6 +692,17 @@ footer {
         width: 100%;
     }
 
+    .accueil-content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-apropos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .accueil-img img {
         width: 90%; 
     }
@@ -702,6 +717,14 @@ footer {
 
     .reponse {
         padding: 12px;
+        font-size: 14px;
+    }
+
+    .modal h4 {
+        font-size: 20px;
+    }
+
+    .modal p {
         font-size: 14px;
     }
 
@@ -730,27 +753,34 @@ footer {
     }
 }
 
-@media screen and (max-width: 576px) {    
+@media screen and (max-width: 576px) {
     .nav-accueil a {
         font-size: 14px;
+    }
+
+    #accueil {
+        height: auto;
+        margin-bottom: 10vh;
     }
     
     #accueil h1 {
         font-size: 40px;
+        margin-bottom: 1vh;
+        margin-top: 4vh;
     }
 
     #accueil h2 {
         font-size: 24px;
     }
 
-    .accueil-p-img, .container-apropos {
+    .accueil-p-img {
         display: block;
         margin: 0 auto; 
         text-align: center; 
     }
 
-    .accueil-p, .apropos-image {
-        width: 60%;
+    .accueil-p {
+        width: 100%;
         margin: auto;
     }
     

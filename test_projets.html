@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte de Projet</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.flip-card-front {
+    background-color: #fff;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-card-front img {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.flip-card-back {
+    background-color: #eda508;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.projets-category {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.projets-parcours {
+    margin: 10px 0;
+    font-style: italic;
+    color: #555;
+}
+
+</style>
+<body>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <h4>Bugtracker</h4>
+                <p class="projets-parcours">Développement web</p>
+                <img src="./img/Personnel/bugtracker1.png" alt="Image du bugtracker">
+            </div>
+            <div class="flip-card-back">
+                <p><span class="projets-category">Travail individuel</span></p>
+                <p><span class="projets-category">Sujet :</span> Dans le cadre d'une situation d'apprentissage évaluée, j'ai confectionné un bugtracker. Ce projet nous permettait de relier nos connaissances sur deux choses : le langage PHP et les bases de données.</p>
+                <p><span class="projets-category">Langages utilisés :</span></p>
+                <ul>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                    <li>HTML / CSS</li>
+                </ul>
+                <p><span class="projets-category">Ce que j'en retiens :</span> Ce projet m'a permis de consolider mes compétences en PHP et en base de données. J'ai surtout découvert comment lier les deux afin de produire du contenu.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

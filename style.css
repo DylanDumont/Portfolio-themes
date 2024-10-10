@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Styles communs pour les boîtes */
+.box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #333;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative; 
+    display: inline-block; 
+    margin: 20px 10px; 
+    padding: 10px;
+    overflow: hidden; 
+}
+
+.box:hover {
+    background-color: #e6e6e6;
+    scale: 1.05;
+    transition: scale 0.3s;
+}
+
+/* Style Minimaliste */
+.box.minimaliste {
+    background-color: #fff;
+    color: #333;
+    position: relative;
+    border: 2px solid #333;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.box.minimaliste:hover {
+    background-color: #f7f7f7;
+}
+
+.box.minimaliste .journal {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    width: 60%;
+    height: 60%;
+    border: 1px solid #999;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.box.minimaliste:hover .journal {
+    opacity: 1;
+}
+
+.box.minimaliste .journal .line {
+    height: 5px;
+    background-color: #ccc;
+    margin-bottom: 10px;
+}
+
+.box.minimaliste .journal .line.short {
+    width: 40%;
+}
+
+.box.minimaliste .journal .line.medium {
+    width: 70%;
+}
+
+.box.minimaliste .journal .line.long {
+    width: 90%;
+}
+
+/* Style Coloré */
+.box.colore {
+    background-color: #fff;
+    color: #333;
+}
+
+.box.colore .circle {
+    position: absolute;
+    border-radius: 50%; 
+    opacity: 0; 
+    transition: opacity 0.3s; 
+}
+
+.box.colore:hover .circle {
+    opacity: 0.6; 
+}
+
+.box.colore .circle:nth-child(1) {
+    width: 40px;
+    height: 40px;
+    background-color: #88EE9E;
+    top: 35%;
+    left: -5%;
+}
+
+.box.colore .circle:nth-child(2) {
+    width: 60px;
+    height: 60px;
+    background-color: #888DEE;
+    top: 65%;
+    left: 20%;
+}
+
+.box.colore .circle:nth-child(3) {
+    width: 80px;
+    height: 80px;
+    background-color: #CE88EE;
+    top: 45%;
+    left: 85%;
+}
+
+/* Style Personnel */
+.box.personnel {
+    background-color: #fff;
+    color: #333;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.box.personnel:hover {
+    background-color: #f7f7f7;
+}
+
+/* Vagues qui apparaissent au survol */
+.box.personnel .wave {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 200%;
+    height: 100px;
+    background-color: rgba(255, 165, 0, 0.3);
+    opacity: 0;
+    transition: transform 0.6s ease-in-out, opacity 0.4s ease;
+    transform: translateX(-100%);
+    border-radius: 100% 0 0 0;
+}
+
+.box.personnel .wave:nth-child(2) {
+    bottom: -30px;
+    background-color: rgba(255, 165, 0, 0.3);
+}
+
+.box.personnel:hover .wave {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.box.personnel .wave:nth-child(2) {
+    transition-delay: 0.2s; /* Décalage pour le mouvement des vagues */
+}
+
+/* Style pour les noms des boîtes */
+.box-name {
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+    color: #333;
+}
+
+.bulle {
+    position: absolute;
+    background-color: rgba(255, 165, 0, 0.6); 
+    width: 10px; 
+    height: 10px; 
+    border-radius: 50%; 
+}
